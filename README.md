@@ -1,6 +1,6 @@
 # Keyness
 
-Keyness is a lightweight keyboard lock indicator for Wayland desktops.
+Keyness is a lightweight keyboard lock indicator for Linux Wayland desktops.
 
 It displays an on-screen notification when Caps Lock or Num Lock changes state.
 
@@ -9,44 +9,49 @@ It displays an on-screen notification when Caps Lock or Num Lock changes state.
 - Caps Lock indicator
 - Num Lock indicator
 - Neutral indicator when a lock is off
-- Native C implementation
-- Wayland layer-shell overlay
+- Native C implementation for KDE Plasma
+- Native Wayland layer-shell overlay for KDE Plasma
+- GNOME Shell extension integration
 - Automatic notification fade-out
+- Automatic desktop startup
+
+## Desktop Support
+
+Keyness supports multiple Wayland desktop environments through desktop-specific integrations.
+
+- **KDE Plasma:** Uses a native C implementation with Wayland layer-shell.
+- **GNOME:** Uses a GNOME Shell extension with native GNOME interfaces.
 
 ## Requirements
 
 - Linux desktop running Wayland
-- Wayland compositor supporting wlr-layer-shell
+- KDE Plasma with wlr-layer-shell support, or
+- GNOME Shell 49 or compatible supported version
 
 ## Privacy
 
-Keyness runs locally on your computer. It reads Caps Lock and Num Lock status
-to display notifications.
+Keyness runs locally on your computer. It reads Caps Lock and Num Lock status to display notifications.
 
-Keyness does not collect personal information, log keystrokes, use analytics,
-or transmit data over the internet.
+Keyness does not collect personal information, log keystrokes, use analytics, or transmit data over the internet.
 
-## Project status
+## Project Status
 
-**Version:** 0.1.0
+**Version:** 0.1.1-2
 
-The current release supports Caps Lock and Num Lock.
+The current release supports Caps Lock and Num Lock on KDE Plasma and GNOME.
 
 ## License
 
-Keyness is proprietary software. It is free for personal, non-commercial use
-only.
+Keyness is proprietary software. It is free for personal, non-commercial use only.
 
-Commercial use, modification, and redistribution require prior written
-permission from the copyright holder.
+Commercial use, modification, and redistribution require prior written permission from the copyright holder.
 
 See the LICENSE file for the complete terms.
 
 ## Publisher
 
-UPSIDE 
+UPSIDE
 
-\-----DOWN 
+-----DOWN
 
 UNDER
-
